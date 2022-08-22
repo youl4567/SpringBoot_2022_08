@@ -26,7 +26,7 @@ public class HomeController {
     {
         List<BookVO> bookList = bookService.selectAll();
         model.addAttribute("BOOKS", bookList);
-        return "home";
+        return "index";
     }
 
     @RequestMapping(value = "" , method = RequestMethod.POST)
